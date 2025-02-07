@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  row-gap: 30px;
+  background-image: url("/img/фон\ солнце.jpg");
+  background-size: cover;
+  background-position: center center;
+  
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  border-radius: 6px;
+  padding: 30px;
+  background-color: inherit;
+  box-shadow: 2px 12px 12px 2px rgba(30, 110, 130, .3);
+}
+
+.textTitle{
+  font-family: "Chewy";
+  font-size: 60px;
+  color:  rgba(355, 255, 255, 0.8);
+}
+
+.showTime{
+  padding: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Courier";
+  color:  rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.addCityBtn{
+  width: 50px;
+  height: 30px;
+  margin-left: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.addCityBtn:hover{
+  background-color: rgb(212, 14, 47);
+}
+.formControl{
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.formControl:hover{
+  background-color: rgb(199, 209, 228);
+}
+
+.main__cityName-temp{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+ 
+}
+
+.city-Name{
+  display: none;
+}
+
+.city-Name.active{
+  display: block;;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Courier";
+  font-size: 60px;
+}
+sup{
+  color: red;
+  font-size: 60%;
+  font-weight: bold;
+  vertical-align: super;
+}
+
+.city-Temp{
+  display: none;
+}
+
+.city-Temp.active{
+  display: block;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Courier";
+  font-size: 40px;
+}
+
+.city-Clouds{
+  display: none;
+}
+.city-Clouds.active{
+  display: block;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Courier";
+  font-size: 40px;
+}
